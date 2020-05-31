@@ -2,10 +2,7 @@ import requests as rq
 import xlwings as xl
 import time
 
-
-
 teams = ['angels', 'astros', 'athletics', 'bluejays', 'braves', 'brewers', 'cardinals', 'cubs', 'diamondbacks', 'dodgers', 'giants', 'indians', 'mariners', 'marlins', 'mets', 'nationals', 'orioles', 'padres', 'phillies', 'pirates', 'rangers', 'rays', 'redsox', 'reds', 'rockies', 'royals', 'tigers', 'twins', 'whitesox', 'yankees']
-
 
 a = True
 
@@ -53,6 +50,5 @@ def update():
                 sht.range(chr(asc+1)+'2').value = 'RA'
                 sht.range(chr(asc)+str(j+2)).value = d
                 sht.range(chr(asc+1)+str(j+2)).value = g
-
 
 update()
